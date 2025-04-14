@@ -1,0 +1,15 @@
+{
+	"name": "PHP & MariaDB",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"features": {
+		"ghcr.io/devcontainers-extra/features/composer:1": {
+			"version": "2.8.4"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "22.12.0"
+		}
+	},
+	"forwardPorts": [8080, 8000, 5173, 3306]
+}
