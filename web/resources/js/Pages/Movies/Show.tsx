@@ -28,7 +28,7 @@ export default function Dashboard({
                     <ul className="list-none">
                         {movie.reviews.map(review => (
                             <li key={review.id}>
-                                <article className="p-6 overflow-hidden bg-white shadow-sm sm:rounded-lg">
+                                <article className="p-6 mb-2 overflow-hidden bg-white shadow-sm sm:rounded-lg">
                                     <header>
                                         <span
                                             className="text-l text-black font-semibold me-2"
