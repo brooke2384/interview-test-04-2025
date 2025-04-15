@@ -1,0 +1,16 @@
+name: backend
+
+services:
+  web:
+    ports:
+      - 8000:8000
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    environment:
+      TASK_TYPE: application
+      APP_ENV: local
+      APP_KEY: base64:/Jzq/ZZuEypmBprFrlhykEkxsaY6vxDbwJoUBgGSTdw=
+      APP_URL: http://localhost:8000
+    volumes:
+      - ./web/database:/app/database

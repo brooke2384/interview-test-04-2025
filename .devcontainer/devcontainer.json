@@ -1,5 +1,5 @@
 {
-	"name": "PHP & MariaDB",
+	"name": "PHP",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
