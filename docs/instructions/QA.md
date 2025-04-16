@@ -9,6 +9,11 @@ Please fork this repo to your own GitHub account by following these steps:
 
 Next, clone the forked repository to your local machine.
 
+> [!NOTE]
+> If you are unfamiliar with forking/cloning git repositories, you can download
+> the repository as a zip archive. To do so, visit `https://github.com/KMBAL/interview-test-04-2025`,
+> select the "Code" dropdown, and then select "Download ZIP".
+
 ## Requirements
 
 Please choose one of the following test cases to implement.
@@ -39,6 +44,15 @@ This test suite should assert the following cases
 
 1. A user should be able to login to the mobile app
 2. A user should be able to view the reviews for a movie in the mobile app
+
+## Submission
+
+Please raise a PR against **you own fork** and email a link to ben@kmbal.com and
+malik@kmbal.com.
+
+> [!NOTE]
+> If you are unfamiliar with the process of raising PRs to GitHub, please create
+> a zip archive of your work and submit it by email to ben@kmbal.com and malik@kmbal.com
 
 ## Guidance
 
