@@ -9,9 +9,17 @@ decisions they have made.
 
 ### Background
 
-The repo contains a movie dashboard. Users can register at the `/register` route.
-Once registered, a user can see a list of movies in the dashboard. They can click
-on a movie to view it's description and reviews.
+The repo contains a movie reviews API, web application and mobile application.
+
+Users can register at the `/register` route. Once registered, a user can see a
+list of movies in the dashboard or in the mobile app. They can click on a movie
+to view it's description and reviews.
+
+> [!NOTE]
+> A default user is available with the following credentials.
+>
+> email: example@user.com
+> password: Demo@123
 
 ### Instructions
 
@@ -21,18 +29,6 @@ the following documents:
 - [Instructions (Web Developers)](./docs/instructions/WEB_DEVELPERS.md)
 - [Instructions (Mobile Developers)](./docs/instructions/MOBILE_DEVELPERS.md)
 - [Instructions (QAs)](./docs/instructions/QA.md)
-
-### Getting Started (Developers)
-
-1. Open the development container in VS Code
-2. Change directory to `./web`
-3. Copy `.env.example` to `.env` with `cp .env.example .env`
-4. Install dependencies with `npm install` and `composer install`
-5. Run the database migrations with `php artisan migrate`
-6. Seed the database with `php artisan db:seed`
-7. Start the Vite development server with `npm run dev`
-8. Start the Laravel development server with `php artisan serve`
-9. Visit `http://localhost:8000/register` and create an account
 
 ## License
 
