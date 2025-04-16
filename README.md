@@ -30,6 +30,8 @@ the following documents:
 - [Instructions (Mobile Developers)](./docs/instructions/MOBILE_DEVELPERS.md)
 - [Instructions (QAs)](./docs/instructions/QA.md)
 
+If you have any questions, please contact ben@kmbal.com or malik@kmbal.com.
+
 ## License
 
 © 2025 Kmbal Ltd. All rights reserved.
