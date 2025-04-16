@@ -62,6 +62,13 @@ The backend and web application can be run locally with Docker. Run `docker comp
 then `docker compose up` to start the web application. It will be accessible at
 `http://localhost:8000`.
 
+### Connecting to the Database Locally
+
+The backend and web application use a SQLite single file database. This is
+accessible at `web/database/production.sqlite`. You can connect to the database
+using most database clients. If your preferred database client does not support
+SQLite, you can use [DBeaver](https://dbeaver.io/download/).
+
 ### Running the Mobile Application Locally
 
 > [!NOTE]
