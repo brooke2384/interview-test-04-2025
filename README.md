@@ -1,4 +1,7 @@
-# Kmbal Coding Test
+# Kmbal Interview Test
+
+This repo contains pre-interview tests for web developer, mobile developer, and
+QA engineer candidates.
 
 ### Rules
 
