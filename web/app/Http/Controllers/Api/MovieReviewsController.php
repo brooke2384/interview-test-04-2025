@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\StoreMovieReviewRequest;
 use App\Http\Requests\Api\UpdateMovieReviewRequest;
 use App\Models\Review;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class MovieReviewsController extends Controller
