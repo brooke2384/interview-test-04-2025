@@ -47,12 +47,12 @@ This test suite should assert the following cases
 
 ## Submission
 
-Please raise a PR against **you own fork** and email a link to ben@kmbal.com and
-malik@kmbal.com.
+Please commit your changes and push them to GitHub. Once you've pushed your changes,
+email a link to your branch to ben@kmbal.com and malik@kmbal.com.
 
 > [!NOTE]
-> If you are unfamiliar with the process of raising PRs to GitHub, please create
-> a zip archive of your work and submit it by email to ben@kmbal.com and malik@kmbal.com
+> If you are unfamiliar with the process of pushing code to GitHub, please create
+> a zip archive of your work and submit it by email to ben@kmbal.com and malik@kmbal.com.
 
 ## Guidance
 
