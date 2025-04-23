@@ -7,7 +7,7 @@ class AuthMiddleware extends GetMiddleware {
 
   @override
   RouteSettings? redirect(String? route) {
-    if (_authController.isAuthenticated()) {
+    if (_authController.isAuthenticated.value) {
       return super.redirect(route);
     }
     return RouteSettings(name: "/login");

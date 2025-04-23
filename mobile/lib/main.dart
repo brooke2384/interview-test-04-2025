@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kmbal_movies_app/bindings/login_bindings.dart';
 import 'package:kmbal_movies_app/bindings/movies_bindings.dart';
+import 'package:kmbal_movies_app/bindings/reviews_bindings.dart';
 import 'package:kmbal_movies_app/controllers/auth_controller.dart';
 import 'package:kmbal_movies_app/middleware/auth_middleware.dart';
 import 'package:kmbal_movies_app/pages/home.dart';
@@ -61,7 +62,7 @@ class MainApp extends StatelessWidget {
           name: "/movies/show",
           page: () => const ShowMoviePage(),
           middlewares: [AuthMiddleware()],
-          bindings: [MoviesBindings()],
+          bindings: [MoviesBindings(), ReviewsBindings()],
         ),
       ],
     );

@@ -25,4 +25,10 @@ class LoginController extends GetxController {
 
     return response;
   }
+
+  Future<void> logout() async {
+    final response = await _apiClient.logout();
+    _authController.clearAuth();
+    Get.offAllNamed("/login");
+  }
 }

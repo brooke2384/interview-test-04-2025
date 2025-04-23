@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kmbal_movies_app/controllers/movies_controller.dart';
+import 'package:kmbal_movies_app/controllers/reviews_controller.dart';
 import 'package:kmbal_movies_app/models/movie.dart';
 import 'package:kmbal_movies_app/models/review.dart';
 import 'package:kmbal_movies_app/tokens.dart';
+import 'package:kmbal_movies_app/widgets/review_form.dart';
 
 class ShowMoviePage extends StatefulWidget {
   const ShowMoviePage({super.key});
@@ -14,6 +16,7 @@ class ShowMoviePage extends StatefulWidget {
 
 class MoviesPageState extends State<ShowMoviePage> {
   final MoviesController _moviesController = Get.find();
+  final ReviewsController _reviewsController = Get.find();
   late final Future<Movie> _movie = _moviesController.fetchMovie(
     Get.parameters['id']!,
   );
@@ -21,6 +24,13 @@ class MoviesPageState extends State<ShowMoviePage> {
       _moviesController.fetchMovieReviews(
     Get.parameters['id']!,
   );
+
+  @override
+  void initState() {
+    super.initState();
+    // Load the reviews to initialize the ReviewsController state
+    _reviewsController.loadReviews(Get.parameters['id']!);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -68,6 +78,8 @@ class MoviesPageState extends State<ShowMoviePage> {
                     "Reviews",
                     style: Theme.of(context).textTheme.headlineMedium,
                   ),
+                  SizedBox(height: 8),
+                  ReviewForm(Get.parameters['id']!),
                   SizedBox(height: 8),
                   AnimatedSize(
                     alignment: Alignment.topCenter,
